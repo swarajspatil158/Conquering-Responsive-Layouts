@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-* {
+* ,*::before,*::after{
   box-sizing: border-box;
 }
 
@@ -9,47 +9,43 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
- .hero{
-  width: 100%;
-  padding: 50px 0;
-  background-color: antiquewhite;
-}
-
 .content{
-  /* padding: 5vh 5vh5vh; */
   margin: 0 auto;
   width: 80%;
   max-width: 750px;
 }
+.hero p {
+  margin-bottom: 4em;
+}
+.hero{
+  width: 100%;
+  padding: 50px 0;
+  background-color: antiquewhite;
+  color: #000000;
+}
+
 h1{
   font-size: 5vh;
 }
-.btn{
-  padding: 1vh auto;
-}
-button{
+
+a{
   border: none;
   text-decoration: none;
   background-color: blueviolet;
   color:#fff;
+  /* margin: 1em auto; */
   padding: 0.4em 0.8em;
   border-radius: 50px;
   font-size: 1.5em;
 }
-p{
+.hero p{
   font-size: 1em;
   padding: auto;
 }
-  /* 
-.hero {
-  width: 100%;
-  background: #23424a;
-  color: white;
-  padding: 50px 0;
+.btn{
+  width: 300px;
 }
-
-.content {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 750px;
-} */
+a:hover,a:focus{
+  opacity: .80;
+  /* color: #000000; */
+}
